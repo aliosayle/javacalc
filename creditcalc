@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class creditcalc
+{
+
+        public static void main(String[] args)
+
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String  name = scan.next();
+        System.out.println("Enter your birth year: ");
+        int year = scan.nextInt();
+        int age = 2022 - year;
+        System.out.println("Enter your credits and credit price ");
+        int credit = scan.nextInt();
+        int price = scan.nextInt();
+        int fee = credit * price;
+        System.out.println("Welcome" + name);
+        System.out.println("Age: " + age);
+        System.out.println("Your currently have " + credit + " registered");
+        System.out.println("Due amount: " + fee);
+    } 
+}    
